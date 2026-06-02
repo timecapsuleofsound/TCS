@@ -5,29 +5,34 @@
 
 ## Color Palette
 
-Derived from the existing site aesthetic: deep black canvas, electric pink energy, cool blue depth.
+Derived from the TCS logo: ice blue music note, candy cane red/white stripes, and the deep black canvas of the existing site.
 
 | Token | Hex | Usage |
 |-------|-----|-------|
 | `tcs-black` | `#0a0a0a` | Page background, primary surface |
 | `tcs-surface` | `#111111` | Card backgrounds, nav |
 | `tcs-surface-2` | `#1a1a1a` | Elevated surfaces, borders |
-| `tcs-pink` | `#e91e63` | Primary accent, CTAs, highlights |
-| `tcs-pink-hover` | `#c2185b` | CTA hover state |
-| `tcs-blue` | `#1401c0` | Secondary accent, glows, gradients |
-| `tcs-blue-light` | `#3d2ee8` | Lighter blue for gradients |
+| `tcs-ice` | `#7dd3e8` | **Primary accent** — logo blue, CTAs, highlights, active states |
+| `tcs-ice-hover` | `#5bbdd6` | CTA hover state |
+| `tcs-ice-glow` | `#a8e6f0` | Subtle glow, focus rings |
+| `tcs-red` | `#cc2200` | **Secondary accent** — logo candy cane red, badges, live indicators |
+| `tcs-red-light` | `#e63b1f` | Lighter red for hover/emphasis |
 | `tcs-white` | `#ffffff` | Primary text |
 | `tcs-gray-300` | `#d1d5db` | Secondary text |
 | `tcs-gray-500` | `#6b7280` | Muted text, placeholders |
 | `tcs-gray-700` | `#374151` | Borders, dividers |
-| `tcs-success` | `#22c55e` | Success states, live indicators |
+| `tcs-success` | `#22c55e` | Success states |
 | `tcs-error` | `#ef4444` | Error states |
+| `tcs-live` | `#cc2200` | Live stream badge (uses tcs-red) |
+
+### Logo Colors (source of truth)
+The TCS logo features a stylized music note in **ice blue** (`#7dd3e8`) held by a **candy cane** in red (`#cc2200`) and white. These two colors are the brand anchors.
 
 ### Usage Notes
 - Background is always `tcs-black` or `tcs-surface`
-- **Pink** is the primary brand energy — use on CTAs, active states, and key highlights
-- **Blue** is the secondary depth — use in gradients behind pink, or for ambient glow effects
-- Never use pink and blue at equal weight in the same element; one leads
+- **Ice blue** (`tcs-ice`) is the primary CTA and highlight color — buttons, links, active nav, accents
+- **Red** (`tcs-red`) is used sparingly for energy moments — live badges, alerts, hover emphasis
+- The combination of ice blue on near-black creates the cool, late-night House Music atmosphere
 
 ---
 
@@ -67,19 +72,23 @@ Derived from the existing site aesthetic: deep black canvas, electric pink energ
 
 ## Logo
 
-> **Pending:** Logo file to be placed in `/public/images/logo/` by owner.
-> Preferred format: SVG. PNG fallback acceptable.
+**File:** `/public/images/logo/logo.PNG`
+**Format:** PNG (SVG version recommended for future — vector export from original source)
 
-### Guidelines (to be confirmed once logo is provided)
-- Minimum width: 120px
-- Clear space: equal to the cap-height of the wordmark on all sides
-- **Approved variants:** Full color, White (for dark backgrounds), Dark (for light backgrounds)
-- Do not stretch, recolor, or apply effects to the logo
+### Description
+Cartoon-style music note in ice blue, held by a red-and-white candy cane with white-gloved hands. Playful, bold, and distinctive. Reflects the fun and energy of House Music culture.
 
-### Current Placeholder
-Until the logo is provided, the site will use a text wordmark:
+### Guidelines
+- Minimum width: 80px
+- Clear space: equal to the height of the music note on all sides
+- **Approved on dark backgrounds only** — the logo reads best on `tcs-black` or `tcs-surface`
+- Do not recolor, stretch, or apply drop shadows
+- On very small sizes (< 80px), use a text wordmark fallback instead
+
+### Text Wordmark Fallback
+When the logo is too small or unavailable:
 - **"TIME CAPSULE OF SOUND"** in Bebas Neue, `tcs-white`
-- Subtext: **"TCS"** in Inter 500, `tcs-pink`
+- Subtext: **"TCS"** in Inter 500, `tcs-ice`
 
 ---
 
