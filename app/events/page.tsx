@@ -20,7 +20,7 @@ interface Event {
   time: string;
   location: string;
   description: string;
-  badge?: 'Free' | 'Online' | 'Sold Out';
+  badge?: 'Free' | 'Online' | 'Sold Out' | 'Get Tickets';
   ticketUrl?: string;
   image?: string;
 }
@@ -29,14 +29,15 @@ interface Event {
 const upcomingEvents: Event[] = [
   {
     id: '1',
-    title: 'TCS Live: House Classics Night',
-    date: 'Saturday, July 12, 2026',
-    time: '9:00 PM – 2:00 AM',
-    location: 'Chicago, IL',
+    title: '36th Annual Chosen Few Picnic & House Music Festival',
+    date: 'Saturday, July 11, 2026',
+    time: '7:00 AM – 10:00 PM',
+    location: 'Jackson Park, Chicago, IL',
     description:
-      'A night dedicated to the golden era of House Music. Expect deep cuts, warehouse vibes, and a lineup of DJs who live and breathe the culture.',
-    badge: 'Free',
-    image: '/images/hero/hero-events.jpg',
+      'Chicago\'s legendary house music celebration returns for its 36th year. Experience the original Chosen Few DJs alongside special guests including DJ Jazzy Jeff, Barbara Tucker, Curtis McClain, DJ Slugo and more. A full day of house music, dancing, culture, food, and community at the birthplace of house music.',
+    badge: 'Get Tickets',
+    ticketUrl: 'https://wl.eventim.us/event/Chosen-Few-Picnic-and-Festival-2026/681332?afflky=ChosenFew',
+    image: '/images/events/chosen-few-2026.png',
   },
   {
     id: '2',
@@ -79,6 +80,7 @@ function EventCard({ event, past = false }: { event: Event; past?: boolean }) {
     Free: 'bg-tcs-success/20 text-tcs-success border-tcs-success/40',
     Online: 'bg-tcs-ice/20 text-tcs-ice border-tcs-ice/40',
     'Sold Out': 'bg-tcs-gray-700 text-tcs-gray-500 border-tcs-gray-700',
+    'Get Tickets': 'bg-tcs-red/20 text-tcs-red-light border-tcs-red/40',
   };
 
   return (
@@ -137,7 +139,7 @@ function EventCard({ event, past = false }: { event: Event; past?: boolean }) {
             <ExternalLink size={14} />
           </a>
         )}
-        {!past && !event.ticketUrl && event.badge !== 'Sold Out' && (
+        {!past && !event.ticketUrl && event.badge === 'Free' && (
           <span className="text-tcs-gray-500 text-sm">Free entry — no ticket required</span>
         )}
       </div>
