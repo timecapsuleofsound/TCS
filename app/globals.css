@@ -1,26 +1,213 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ============================================================
+   TCS BRAND TOKENS — Tailwind v4 @theme
+   Source of truth: docs/brand.md
+   ============================================================ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-display: var(--font-bebas-neue);
+  --font-body:    var(--font-inter);
+
+  /* Backgrounds & Surfaces */
+  --color-tcs-black:     #0a0a0a;
+  --color-tcs-surface:   #111111;
+  --color-tcs-surface-2: #1a1a1a;
+
+  /* Primary Accent — Ice Blue (from logo) */
+  --color-tcs-ice:       #7dd3e8;
+  --color-tcs-ice-hover: #5bbdd6;
+  --color-tcs-ice-glow:  #a8e6f0;
+
+  /* Secondary Accent — Red (from logo candy cane) */
+  --color-tcs-red:       #cc2200;
+  --color-tcs-red-light: #e63b1f;
+
+  /* Text */
+  --color-tcs-white:     #ffffff;
+  --color-tcs-gray-300:  #d1d5db;
+  --color-tcs-gray-500:  #6b7280;
+  --color-tcs-gray-700:  #374151;
+
+  /* State */
+  --color-tcs-success:   #22c55e;
+  --color-tcs-error:     #ef4444;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ============================================================
+   GLOBAL BASE STYLES
+   ============================================================ */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Display headings — Bebas Neue */
+  h1, h2, h3 {
+    font-family: var(--font-bebas-neue), var(--font-display), system-ui, sans-serif;
+    font-weight: 400; /* Bebas Neue only has one weight */
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  /* Body headings — Inter bold */
+  h4, h5, h6 {
+    font-family: var(--font-inter), var(--font-body), system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+  }
+
+  p {
+    color: #d1d5db;
+    line-height: 1.7;
+  }
+
+  a {
+    color: #7dd3e8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: #a8e6f0;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Text selection */
+  ::selection {
+    background-color: #7dd3e8;
+    color: #0a0a0a;
+  }
+
+  /* Focus ring — accessible, on-brand */
+  :focus-visible {
+    outline: 2px solid #7dd3e8;
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================================
+   REUSABLE COMPONENT CLASSES
+   ============================================================ */
+@layer components {
+
+  /* --- Buttons --- */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-tcs-ice text-tcs-black font-semibold
+           px-6 py-3 rounded-lg
+           transition-all duration-200 ease-in-out
+           hover:bg-tcs-ice-hover
+           focus-visible:ring-2 focus-visible:ring-tcs-ice focus-visible:ring-offset-2 focus-visible:ring-offset-tcs-black
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-tcs-ice
+           border border-tcs-ice
+           px-6 py-3 rounded-lg
+           transition-all duration-200 ease-in-out
+           hover:bg-tcs-ice hover:text-tcs-black
+           focus-visible:ring-2 focus-visible:ring-tcs-ice focus-visible:ring-offset-2 focus-visible:ring-offset-tcs-black
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-live {
+    @apply inline-flex items-center gap-2
+           bg-tcs-red text-white font-semibold
+           px-4 py-2 rounded-full
+           transition-all duration-200 ease-in-out
+           hover:bg-tcs-red-light;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Live pulse dot */
+  .btn-live::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    animation: pulse-live 1.5s ease-in-out infinite;
+  }
+
+  /* --- Layout --- */
+  .container-tcs {
+    @apply mx-auto w-full px-4 sm:px-6 lg:px-8;
+    max-width: 1280px;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  /* --- Typography --- */
+  .section-label {
+    @apply text-tcs-ice text-xs font-semibold tracking-widest uppercase mb-3;
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  .heading-display {
+    font-family: var(--font-bebas-neue), var(--font-display), sans-serif;
+    @apply text-5xl md:text-6xl lg:text-7xl text-white leading-none tracking-wide;
+  }
+
+  .heading-section {
+    font-family: var(--font-bebas-neue), var(--font-display), sans-serif;
+    @apply text-3xl md:text-4xl text-white leading-none tracking-wide;
+  }
+
+  /* --- Cards --- */
+  .card-tcs {
+    @apply bg-tcs-surface border border-tcs-gray-700 rounded-lg overflow-hidden
+           transition-all duration-200 ease-in-out
+           hover:border-tcs-ice/40;
+  }
+
+  /* --- Divider --- */
+  .divider-tcs {
+    @apply border-t border-tcs-gray-700 my-8;
+  }
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
 }
