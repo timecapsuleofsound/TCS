@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Unlock the memories and rhythm of House. Live streams, legendary DJ sets, and the history of House Music — all in one place.",
   keywords: ["house music", "DJ sets", "live streams", "archives", "Twitch", "Mixcloud"],
   metadataBase: new URL(
-    process.env.SITE_URL || "https://tcs-nzra6p22d-akili-king-s-projects.vercel.app"
+    process.env.SITE_URL || "https://tcs-rust.vercel.app"
   ),
   openGraph: {
     title: "Time Capsule of Sound",
