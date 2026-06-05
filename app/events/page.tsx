@@ -20,7 +20,7 @@ interface Event {
   time: string;
   location: string;
   description: string;
-  badge?: 'Free' | 'Online' | 'Sold Out' | 'Ticketed';
+  badge?: 'Free' | 'Online' | 'Sold Out' | 'Get Tickets';
   ticketUrl?: string;
   image?: string;
 }
@@ -35,7 +35,7 @@ const upcomingEvents: Event[] = [
     location: 'Jackson Park, Chicago, IL',
     description:
       'Chicago\'s legendary house music celebration returns for its 36th year. Experience the original Chosen Few DJs alongside special guests including DJ Jazzy Jeff, Barbara Tucker, Curtis McClain, DJ Slugo and more. A full day of house music, dancing, culture, food, and community at the birthplace of house music.',
-    badge: 'Ticketed',
+    badge: 'Get Tickets',
     image: '/images/events/chosen-few-2026.png',
   },
   {
@@ -79,7 +79,7 @@ function EventCard({ event, past = false }: { event: Event; past?: boolean }) {
     Free: 'bg-tcs-success/20 text-tcs-success border-tcs-success/40',
     Online: 'bg-tcs-ice/20 text-tcs-ice border-tcs-ice/40',
     'Sold Out': 'bg-tcs-gray-700 text-tcs-gray-500 border-tcs-gray-700',
-    Ticketed: 'bg-tcs-red/20 text-tcs-red-light border-tcs-red/40',
+    'Get Tickets': 'bg-tcs-red/20 text-tcs-red-light border-tcs-red/40',
   };
 
   return (
