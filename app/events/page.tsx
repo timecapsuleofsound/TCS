@@ -36,6 +36,7 @@ const upcomingEvents: Event[] = [
     description:
       'Chicago\'s legendary house music celebration returns for its 36th year. Experience the original Chosen Few DJs alongside special guests including DJ Jazzy Jeff, Barbara Tucker, Curtis McClain, DJ Slugo and more. A full day of house music, dancing, culture, food, and community at the birthplace of house music.',
     badge: 'Get Tickets',
+    ticketUrl: 'https://wl.eventim.us/event/Chosen-Few-Picnic-and-Festival-2026/681332?afflky=ChosenFew',
     image: '/images/events/chosen-few-2026.png',
   },
   {
