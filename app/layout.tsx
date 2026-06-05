@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -46,7 +48,11 @@ export default function RootLayout({
       className={`${bebasNeue.variable} ${inter.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-tcs-black text-tcs-white antialiased">
-        {children}
+        <Navbar />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
