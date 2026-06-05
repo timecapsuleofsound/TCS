@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tcs-nzra6p22d-akili-king-s-projects.vercel.app
+Host: https://tcs-rust.vercel.app
 
 # Sitemaps
-Sitemap: https://tcs-nzra6p22d-akili-king-s-projects.vercel.app/sitemap.xml
+Sitemap: https://tcs-rust.vercel.app/sitemap.xml
