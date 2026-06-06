@@ -10,17 +10,17 @@ const featuredSections = [
     body: 'We stream live House Music events, DJ sessions, and exclusive performances on Twitch, YouTube, and beyond. Tune in and feel the room.',
     cta: 'Go to Streams',
     href: '/streams',
-    image: '/images/hero/hero-streams.jpg',
+    image: '/images/hero/Digital2.png',
     imageAlt: 'DJ performing live',
     reverse: false,
   },
   {
-    label: 'The Vault',
-    heading: 'Decades of Sound, On Demand.',
-    body: 'From the underground warehouses of Chicago to the clubs of New York and London — the mixes that defined House Music are right here. Browse, play, relive.',
-    cta: 'Browse Archives',
+    label: 'Time Capsule',
+    heading: 'Decades of Sound and Culture.',
+    body: 'From the underground warehouses of Chicago to the clubs of New York and London — Explore the history that inspired it all right here. Browse, play, relive.',
+    cta: 'Open the Capsule',
     href: '/archives',
-    image: '/images/hero/hero-archives.jpg',
+    image: '/images/hero/timecapsule.png',
     imageAlt: 'Vinyl records and archived music',
     reverse: true,
   },
@@ -30,13 +30,13 @@ const featuredSections = [
     body: 'Live events, listening parties, and community gatherings. Stay connected and never miss a moment.',
     cta: 'See Events',
     href: '/events',
-    image: '/images/hero/hero-events.jpg',
+    image: '/images/hero/hero-events.png',
     imageAlt: 'House music event crowd',
     reverse: false,
   },
   {
     label: 'The Community',
-    heading: 'House Music Is a Family.',
+    heading: 'Friends and Family.',
     body: 'Connect with DJs, producers, and fans who live and breathe this culture. Follow us, join the conversation, and be part of something that never went out of style.',
     cta: 'Join the Community',
     href: '/community',
@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative flex items-center min-h-[calc(100vh-64px)] overflow-hidden">
         {/* Background image */}
         <Image
-          src="/images/hero/hero-home.jpg"
+          src="/images/hero/Vinyl_black_label_blkbg.jpg"
           alt="House Music event"
           fill
           className="object-cover object-center"

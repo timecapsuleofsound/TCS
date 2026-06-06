@@ -46,10 +46,22 @@ const upcomingEvents: Event[] = [
     time: '4:00 PM – 8:00 PM',
     location: 'Online — Twitch',
     description:
-      'Tune in for four hours of continuous House Music, live on our Twitch channel. Sunday vibes, no cover charge.',
+      'Tune in for four hours of continuous House Music and Interviews, live on our Twitch channel. Sunday vibes, no cover charge.',
     badge: 'Online',
     ticketUrl: 'https://www.twitch.tv/TimeCapsuleofSound',
-    image: '/images/hero/hero-streams.jpg',
+    image: '/images/events/studio-session.png',
+  },
+  {
+    id: '3',
+    title: 'Tony\'s Clubhouse: 91.7 WLFR - Live Stream',
+    date: 'Fridays',
+    time: '12:00 AM – 9:00 AM ET',
+    location: 'Online — WLFR 91.7 FM',
+    description:
+      'DJ Tony Ton takes over the airwaves with a weekly live stream, bringing you the best of House Musicon WLFR 91.7 FM. Tune in for a vibe that captures the essence of the culture. Tony\'s Clubhouse brings the beats.',
+    badge: 'Online',
+    ticketUrl: 'https://www.radiorethink.com/listen/wlfr/',
+    image: '/images/events/WLFR2019logo.jpg',
   },
 ];
 
@@ -154,7 +166,7 @@ export default function EventsPage() {
       {/* ── Hero ── */}
       <section className="relative flex items-center h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/hero/hero-events.jpg"
+          src="/images/hero/hero-events.png"
           alt="House Music event"
           fill
           className="object-cover object-center"
