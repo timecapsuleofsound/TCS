@@ -18,7 +18,7 @@ export default function ArchivesPage() {
       {/* ── Hero ── */}
       <section className="relative flex items-center h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/hero/hero-archives.jpg"
+          src="/images/hero/timecapsule.png"
           alt="Vinyl records and archived music"
           fill
           className="object-cover object-center"

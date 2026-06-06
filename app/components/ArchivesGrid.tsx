@@ -56,13 +56,13 @@ const mixes: Mix[] = [
   },
   {
     id: '4',
-    title: 'Underground Chicago: The Early Days',
-    artist: 'The Founding Set',
+    title: 'Tony\'s Clubhouse - From the Vault (Miss Tina mix)',
+    artist: 'DJ Tony Ton',
     platform: 'Mixcloud',
-    duration: '1h 20m',
+    duration: '1h 28m',
     recorded: '1988 (archived 2021)',
     era: '1980s',
-    url: 'https://www.mixcloud.com/TimeCapsuleofSound',
+    url: 'https://www.mixcloud.com/tonysclubhouse/fromthevault-clubhouse-archive-miss-tina/',
   },
   {
     id: '5',

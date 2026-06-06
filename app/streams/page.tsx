@@ -51,7 +51,7 @@ export default function StreamsPage() {
       {/* ── Page Hero ── */}
       <section className="relative flex items-center h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/hero/hero-streams.jpg"
+          src="/images/hero/Digital2.png"
           alt="Live DJ performance"
           fill
           className="object-cover object-center"
