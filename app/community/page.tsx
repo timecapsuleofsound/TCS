@@ -57,7 +57,7 @@ export default function CommunityPage() {
       {/* ── Hero ── */}
       <section className="relative flex items-center h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/hero/hero-community.jpg"
+          src="/images/hero/house_community.png"
           alt="House Music community"
           fill
           className="object-cover object-center"

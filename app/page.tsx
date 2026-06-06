@@ -40,7 +40,7 @@ const featuredSections = [
     body: 'Connect with DJs, producers, and fans who live and breathe this culture. Follow us, join the conversation, and be part of something that never went out of style.',
     cta: 'Join the Community',
     href: '/community',
-    image: '/images/hero/hero-community.jpg',
+    image: '/images/hero/house_community.png',
     imageAlt: 'House music community',
     reverse: true,
   },

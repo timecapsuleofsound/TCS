@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* ── Hero ── */}
       <section className="relative flex items-center h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/hero/hero-about.jpg"
+          src="/images/hero/studio.png"
           alt="Time Capsule of Sound"
           fill
           className="object-cover object-center"
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-72 lg:h-96 rounded-lg overflow-hidden">
               <Image
-                src="/images/hero/hero-timecapsule.jpg"
+                src="/images/hero/Vinyl_white_label.png"
                 alt="House Music culture"
                 fill
                 className="object-cover object-center"
