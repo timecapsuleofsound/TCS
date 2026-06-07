@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 const featuredSections = [
   {
     label: 'Live & On Air',
-    heading: 'Catch Every Set, Live.',
+    heading: 'Live Streams.',
     body: 'We stream live House Music events, DJ sessions, and exclusive performances on Twitch, YouTube, and beyond. Tune in and feel the room.',
     cta: 'Go to Streams',
     href: '/streams',
@@ -67,17 +67,17 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10 container-tcs py-20">
           <div className="max-w-2xl">
-            <p className="section-label mb-6">Time Capsule of Sound</p>
+            <p className="section-label mb-6">TCS Presents...</p>
             <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl mb-6">
-              Unlock the Memories and Rhythm of House.
+              Time Capsule of Sound!!
             </h1>
             <p className="text-tcs-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-              Your destination for live House Music streams, legendary DJ sets,
+              Unlock the Memories and Rhythm of House.  Your destination for live House Music streams, legendary DJ sets,
               and the stories behind the culture that moved the world.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/streams" className="btn-primary">
-                Watch Live
+                Live Streams
               </Link>
               <Link href="/archives" className="btn-secondary">
                 Explore the Archives
