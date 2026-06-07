@@ -52,7 +52,7 @@ const mixes: Mix[] = [
     duration: '3h 00m',
     recorded: '1994 (remastered 2022)',
     era: '1990s',
-    url: 'https://www.youtube.com/TimeCapsuleofSound',
+    url: 'https://www.youtube.com/@TimeCapsuleofSound',
   },
   {
     id: '4',
@@ -82,7 +82,7 @@ const mixes: Mix[] = [
     duration: '1h 55m',
     recorded: '2010',
     era: '2010s',
-    url: 'https://www.youtube.com/TimeCapsuleofSound',
+    url: 'https://www.youtube.com/@TimeCapsuleofSound',
   },
   {
     id: '7',
