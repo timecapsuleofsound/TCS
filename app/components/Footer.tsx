@@ -44,7 +44,7 @@ const socialLinks = [
   { label: 'Twitter / X',href: 'https://x.com/TimeCapofSound',                Icon: XIcon },
   { label: 'Instagram',  href: 'https://www.instagram.com/TimeCapsuleofSound/',Icon: InstagramIcon },
   { label: 'Twitch',     href: 'https://www.twitch.tv/TimeCapsuleofSound',     Icon: TwitchIcon },
-  { label: 'YouTube',    href: 'https://www.youtube.com/TimeCapsuleofSound',   Icon: YouTubeIcon },
+  { label: 'YouTube',    href: 'https://www.youtube.com/@TimeCapsuleofSound',   Icon: YouTubeIcon },
 ];
 
 export default function Footer() {
