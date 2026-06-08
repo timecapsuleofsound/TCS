@@ -25,7 +25,7 @@ const platforms = [
   {
     name: 'YouTube',
     description: 'VODs, replays & interviews',
-    href: 'https://www.youtube.com/TimeCapsuleofSound',
+    href: 'https://www.youtube.com/@TimeCapsuleofSound',
     color: 'border-red-500',
     badge: null,
   },
