@@ -112,7 +112,7 @@ export default function StreamsPage() {
                 never miss a drop.
               </p>
               <a
-                href="https://www.youtube.com/TimeCapsuleofSound"
+                href="https://www.youtube.com/@TimeCapsuleofSound"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
