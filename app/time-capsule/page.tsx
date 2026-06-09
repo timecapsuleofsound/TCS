@@ -93,7 +93,7 @@ export default function TimeCapsulePage() {
       {/* ── Immersive Hero ── */}
       <section className="relative flex items-center min-h-[60vh] overflow-hidden">
         <Image
-          src="/images/hero/time_capsule_mic.png"
+          src="/images/hero/TCS_old.png"
           alt="House Music history"
           fill
           className="object-cover object-center"
