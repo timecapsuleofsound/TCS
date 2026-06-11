@@ -49,6 +49,20 @@ const socialLinks = [
     description: 'VODs, replays, and documentary content.',
     color: 'border-red-500',
   },
+  {
+    name: 'Spotify',
+    handle: 'TimeCapsuleofSound',
+    href: 'https://www.spotify.com/TimeCapsuleofSound',
+    description: 'VODs, replays, and documentary content.',
+    color: 'border-green-500',
+  },
+  {
+    name: 'tikTok',
+    handle: 'TimeCapsuleofSound',
+    href: 'https://www.tiktok.com/TimeCapsuleofSound',
+    description: 'VODs, replays, and documentary content.',
+    color: 'border-black-500',
+  },
 ];
 
 export default function CommunityPage() {

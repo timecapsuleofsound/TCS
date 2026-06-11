@@ -86,10 +86,10 @@ export default function Footer() {
           <div>
             <p className="section-label mb-4">Connect</p>
             <a
-              href="mailto:TimeCaps@tcats.com"
+              href="mailto:TimeCapS@tcats.com"
               className="text-tcs-gray-300 text-sm hover:text-tcs-ice transition-colors duration-150 block mb-6"
             >
-              TimeCaps@tcats.com
+              TimeCapS@tcats.com
             </a>
             <div className="flex items-center gap-4">
               {socialLinks.map(({ label, href, Icon }) => (
