@@ -76,7 +76,7 @@ All other components and pages are Server Components.
 | **Teko** | Display headings, section headings | `next/font/google`, weights 400 + 600, `display: 'swap'` |
 | **Inter** | Body copy, UI text, labels | `next/font/google`, `display: 'swap'` |
 
-Fonts are loaded in `app/layout.tsx` and injected as CSS variables (`--font-bebas-neue`, `--font-inter`) available throughout the app.
+Fonts are loaded in `app/layout.tsx` and injected as CSS variables (`--font-teko`, `--font-inter`) available throughout the app.
 
 ---
 
@@ -135,7 +135,8 @@ app/
 ├── not-found.tsx               ← Custom 404
 └── components/
     ├── Navbar.tsx              ← 'use client'
-    ├── Footer.tsx              ← Server Component — inline SVG social icons
+    ├── Footer.tsx              ← Server Component
+    ├── SocialIcon.tsx          ← Server Component — simple-icons brand SVGs
     ├── TwitchEmbed.tsx         ← 'use client'
     ├── ArchivesGrid.tsx        ← 'use client'
     └── NewsletterForm.tsx      ← 'use client'
