@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Teko, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const bebasNeue = Bebas_Neue({
-  weight: "400",
-  variable: "--font-bebas-neue",
+const teko = Teko({
+  weight: ["400", "600"],
+  variable: "--font-teko",
   subsets: ["latin"],
   display: "swap",
 });
@@ -61,7 +61,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bebasNeue.variable} ${inter.variable} h-full`}
+      className={`${teko.variable} ${inter.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-tcs-black text-tcs-white antialiased">
         <Navbar />

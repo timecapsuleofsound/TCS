@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <p className="heading-section text-2xl mb-2">TIME CAPSULE<br />OF SOUND</p>
+            <p className="heading-section text-2xl mb-2">Time Capsule<br />of Sound</p>
             <p className="text-tcs-gray-500 text-sm leading-relaxed">
               Preserving the Sound.<br />Celebrating the Culture.
             </p>
