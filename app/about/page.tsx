@@ -161,8 +161,8 @@ export default function AboutPage() {
           <p className="text-tcs-gray-300 max-w-md mx-auto mb-8">
             Have a mix to share? A story to tell? A collaboration in mind? Reach out.
           </p>
-          <a href="mailto:TimeCaps@tcats.com" className="btn-primary">
-            TimeCaps@tcats.com
+          <a href="mailto:TimeCapS@tcats.com" className="btn-primary">
+            TimeCapS@tcats.com
           </a>
         </div>
       </section>

@@ -64,7 +64,7 @@ export default function ArchivesPage() {
             If you have a set that belongs in the archive, reach out. We&apos;re
             always looking to grow the collection.
           </p>
-          <a href="mailto:TimeCaps@tcats.com" className="btn-primary">
+          <a href="mailto:TimeCapS@tcats.com" className="btn-primary">
             Get in Touch
           </a>
         </div>
