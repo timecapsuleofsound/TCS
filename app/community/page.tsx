@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import NewsletterForm from '../components/NewsletterForm';
+import SocialIcon from '../components/SocialIcon';
 
 export const metadata: Metadata = {
   title: 'Community | Time Capsule of Sound',
@@ -45,23 +46,23 @@ const socialLinks = [
   {
     name: 'YouTube',
     handle: 'TimeCapsuleofSound',
-    href: 'https://www.youtube.com/TimeCapsuleofSound',
+    href: 'https://www.youtube.com/@TimeCapsuleofSound',
     description: 'VODs, replays, and documentary content.',
     color: 'border-red-500',
   },
   {
     name: 'Spotify',
     handle: 'TimeCapsuleofSound',
-    href: 'https://www.spotify.com/TimeCapsuleofSound',
-    description: 'VODs, replays, and documentary content.',
+    href: 'https://open.spotify.com/user/TimeCapsuleofSound',
+    description: 'Curated playlists and House Music culture.',
     color: 'border-green-500',
   },
   {
-    name: 'tikTok',
-    handle: 'TimeCapsuleofSound',
-    href: 'https://www.tiktok.com/TimeCapsuleofSound',
-    description: 'VODs, replays, and documentary content.',
-    color: 'border-black-500',
+    name: 'TikTok',
+    handle: '@TimeCapsuleofSound',
+    href: 'https://www.tiktok.com/@TimeCapsuleofSound',
+    description: 'Short-form culture, clips, and community moments.',
+    color: 'border-tcs-white',
   },
 ];
 
@@ -122,9 +123,16 @@ export default function CommunityPage() {
                 rel="noopener noreferrer"
                 className={`card-tcs border-t-2 ${color} p-6 group flex flex-col gap-3`}
               >
-                <h3 className="text-tcs-white font-semibold text-lg group-hover:text-tcs-ice transition-colors">
-                  {name}
-                </h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-tcs-white font-semibold text-lg group-hover:text-tcs-ice transition-colors">
+                    {name}
+                  </h3>
+                  <SocialIcon
+                    platform={name}
+                    size={22}
+                    className="text-tcs-gray-500 group-hover:text-tcs-ice transition-colors flex-shrink-0"
+                  />
+                </div>
                 <p className="text-tcs-ice text-sm font-medium">{handle}</p>
                 <p className="text-tcs-gray-500 text-sm flex-1">{description}</p>
                 <p className="text-tcs-ice text-sm mt-auto group-hover:text-tcs-ice-glow transition-colors">
