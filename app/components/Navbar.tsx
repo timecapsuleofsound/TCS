@@ -53,7 +53,7 @@ export default function Navbar() {
           />
           <span className="hidden sm:block text-tcs-white font-semibold text-sm tracking-wide leading-tight">
             TIME CAPSULE<br />
-            <span className="text-tcs-ice text-xs">OF SOUND</span>
+            <span className="text-tcs-ice text-s">of SOUND</span>
           </span>
         </Link>
 
