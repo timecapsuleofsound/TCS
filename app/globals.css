@@ -6,7 +6,7 @@
    ============================================================ */
 @theme inline {
   /* Fonts */
-  --font-display: var(--font-bebas-neue);
+  --font-display: var(--font-teko);
   --font-body:    var(--font-inter);
 
   /* Backgrounds & Surfaces */
@@ -57,12 +57,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Display headings — Bebas Neue */
+  /* Display headings — Teko */
   h1, h2, h3 {
-    font-family: var(--font-bebas-neue), var(--font-display), system-ui, sans-serif;
-    font-weight: 400; /* Bebas Neue only has one weight */
+    font-family: var(--font-teko), var(--font-display), system-ui, sans-serif;
+    font-weight: 600;
     line-height: 1.1;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     color: #ffffff;
   }
 
@@ -182,13 +182,15 @@
   }
 
   .heading-display {
-    font-family: var(--font-bebas-neue), var(--font-display), sans-serif;
-    @apply text-5xl md:text-6xl lg:text-7xl text-white leading-none tracking-wide;
+    font-family: var(--font-teko), var(--font-display), sans-serif;
+    font-weight: 600;
+    @apply text-5xl md:text-6xl lg:text-7xl text-white leading-none tracking-normal;
   }
 
   .heading-section {
-    font-family: var(--font-bebas-neue), var(--font-display), sans-serif;
-    @apply text-3xl md:text-4xl text-white leading-none tracking-wide;
+    font-family: var(--font-teko), var(--font-display), sans-serif;
+    font-weight: 600;
+    @apply text-3xl md:text-4xl text-white leading-none tracking-normal;
   }
 
   /* --- Cards --- */
