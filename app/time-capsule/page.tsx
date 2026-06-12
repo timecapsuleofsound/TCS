@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'The Time Capsule | Time Capsule of Sound',
+  title: 'Time Capsule | Time Capsule of Sound',
   description:
     'House Music didn\'t just arrive — it was built, beat by beat, in basements, warehouses, and clubs across the world. This is where we keep those stories.',
   openGraph: {
-    title: 'The Time Capsule | Time Capsule of Sound',
+    title: 'Time Capsule | Time Capsule of Sound',
     description: 'Explore the history and legacy of House Music — the sets, the eras, the moments.',
   },
 };
@@ -105,7 +105,7 @@ export default function TimeCapsulePage() {
         <div className="relative z-10 container-tcs py-20 text-center mx-auto">
           <p className="section-label justify-center flex mb-6">Time Capsule of Sound</p>
           <h1 className="heading-display text-6xl md:text-7xl lg:text-8xl mb-6 max-w-4xl mx-auto">
-            The Time Capsule
+            Time Capsule
           </h1>
           <p className="text-tcs-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             House Music didn&apos;t just arrive — it was built, beat by beat, in
