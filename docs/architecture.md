@@ -73,7 +73,7 @@ All other components and pages are Server Components.
 
 | Font | Usage | Loading |
 |---|---|---|
-| **Bebas Neue** | Display headings, section headings | `next/font/google`, `display: 'swap'` |
+| **Teko** | Display headings, section headings | `next/font/google`, weights 400 + 600, `display: 'swap'` |
 | **Inter** | Body copy, UI text, labels | `next/font/google`, `display: 'swap'` |
 
 Fonts are loaded in `app/layout.tsx` and injected as CSS variables (`--font-bebas-neue`, `--font-inter`) available throughout the app.

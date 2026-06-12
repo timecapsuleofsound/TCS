@@ -41,11 +41,11 @@ The TCS logo features a stylized music note in **ice blue** (`#7dd3e8`) held by 
 ### Fonts
 | Role | Font | Source | Weights |
 |------|------|---------|---------|
-| Display / Headings | **Bebas Neue** | Google Fonts | 400 (only weight) |
+| Display / Headings | **Teko** | Google Fonts | 400, 600 |
 | Body / UI | **Inter** | Google Fonts | 400, 500, 700 |
 
 **Rationale:**
-- *Bebas Neue* is bold, condensed, and impactful — perfect for House Music energy and the archival "time capsule" feeling. Used for all H1–H3 headings, hero text, and section labels.
+- *Teko* is a tall, condensed display font with full mixed-case support — preserving the bold, impactful feel of the original Bebas Neue while allowing headings like "Time Capsule **of** Sound" to render the lowercase "of" as intended by the brand. Weight 600 is used for all display and section headings. Replaced Bebas Neue (caps-only) to honour the TCS brand capitalisation rule.
 - *Inter* is clean and highly readable at all sizes — ideal for body copy, nav, and UI elements.
 
 ### Type Scale
@@ -59,7 +59,7 @@ The TCS logo features a stylized music note in **ice blue** (`#7dd3e8`) held by 
 | `text-2xl` | 24px | 1.3 | Section headings (H3) |
 | `text-3xl` | 30px | 1.2 | Page headings (H2) |
 | `text-4xl` | 36px | 1.1 | Hero sub-headings |
-| `text-5xl` | 48px | 1 | Hero headings (H1, Bebas Neue) |
+| `text-5xl` | 48px | 1 | Hero headings (H1, Teko) |
 | `text-6xl` | 60px | 1 | Oversized display text |
 | `text-7xl` | 72px | 1 | Full-bleed hero display |
 
@@ -87,7 +87,7 @@ Cartoon-style music note in ice blue, held by a red-and-white candy cane with wh
 
 ### Text Wordmark Fallback
 When the logo is too small or unavailable:
-- **"TIME CAPSULE OF SOUND"** in Bebas Neue, `tcs-white`
+- **"Time Capsule of Sound"** in Teko 600, `tcs-white` — "of" lowercase per brand rules
 - Subtext: **"TCS"** in Inter 500, `tcs-ice`
 
 ---
