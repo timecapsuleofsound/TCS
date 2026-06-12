@@ -52,8 +52,8 @@ export default function Navbar() {
             priority
           />
           <span className="hidden sm:block text-tcs-white font-semibold text-sm tracking-wide leading-tight">
-            TIME CAPSULE<br />
-            <span className="text-tcs-ice text-s">of SOUND</span>
+            Time Capsule<br />
+            <span className="text-tcs-ice text-s">of Sound</span>
           </span>
         </Link>
 
