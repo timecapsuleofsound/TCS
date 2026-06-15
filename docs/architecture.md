@@ -153,12 +153,12 @@ app/
 | Title template | `"%s \| Time Capsule of Sound"` applied automatically |
 | Sitemap | `next-sitemap` — generates `sitemap.xml`, `sitemap-0.xml`, `robots.txt` as postbuild step |
 | Robots | All pages allowed (`allow: /`); `/_not-found` excluded |
-| `metadataBase` | `https://tcs-rust.vercel.app` (update to `https://tcats.com` at go-live) |
+| `metadataBase` | `https://tcs-green.vercel.app` (update to `https://tcats.com` at go-live) |
 
 ```json
 // next-sitemap.config.js
 {
-  "siteUrl": "process.env.SITE_URL || 'https://tcs-rust.vercel.app'",
+  "siteUrl": "process.env.SITE_URL || 'https://tcs-green.vercel.app'",
   "generateRobotsTxt": true,
   "exclude": ["/_not-found"]
 }
@@ -194,7 +194,7 @@ Sanity Content Lake (hosted)
 Next.js App (Vercel)
         │
         ▼  static HTML + CDN
-tcs-rust.vercel.app / tcats.com
+tcs-green.vercel.app / tcats.com
 ```
 
 #### Sanity Document Schemas (planned)
@@ -230,7 +230,7 @@ Vercel CDN — stale page purged, new static page generated within ~60 seconds
 | Preview environments | Vercel preview URL generated per PR branch |
 | Build command | `next build && next-sitemap` |
 | Environment variables | `SITE_URL` — used by `metadataBase` and `next-sitemap` |
-| Production URL | `https://tcs-rust.vercel.app` |
+| Production URL | `https://tcs-green.vercel.app` |
 | Target domain | `https://tcats.com` — DNS cutover on hold (TCS-27, TCS-69) |
 
 ### Planned Environment Variables (Sanity — TCS-71/TCS-73)
