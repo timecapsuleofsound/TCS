@@ -1,7 +1,7 @@
 # TCS — Architecture Document
 
 **Project:** Time Capsule of Sound  
-**Production URL:** https://tcs-rust.vercel.app  
+**Production URL:** https://tcs-green.vercel.app  
 **Target domain:** tcats.com *(go-live on hold — see Constraints)*  
 **Last updated:** June 2026
 
@@ -248,7 +248,7 @@ Vercel CDN — stale page purged, new static page generated within ~60 seconds
 
 | Concern | Detail |
 |---|---|
-| Repository | GitHub — `github.com/akiliking/TCS` (private) |
+| Repository | GitHub — `github.com/timecapsuleofsound/TCS` (private) |
 | Branching strategy | GitHub Flow — feature branches → PR → merge to `main` |
 | Branch protection | `main` protected; PRs required; 0 required approvals (self-merge allowed) |
 | Deployment on merge | Vercel auto-deploys every merge to `main` |
